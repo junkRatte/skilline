@@ -2,8 +2,20 @@
 $color-blue: #65DAFF;
 $color-blue-dark: #2F327D;
 $color-orange: #F48C06;
+$color-white: #fff;
+$color-grey: #6C6C6C;
+$color-grey-blue: #696984;
+$color-black: #252641;
+$color-landing-bg: #FFF2E1;
+
+/* box shadows */
+$menu-box-shadow: 0 .2rem 2rem rgba(116, 116, 116, 0.4);
+$login-button-shadow: 0 .2rem .4rem rgba(116, 116, 116, 0.3);
 
 /* font-size */
+$font-size-14: 1.4rem;
+$font-size-16: 1.6rem;
+$font-size-18: 1.8rem;
 $font-size-20: 2rem;
 $font-size-22: 2.2rem;
 $font-size-24: 2.4rem;
