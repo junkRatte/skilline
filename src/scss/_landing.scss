@@ -1,0 +1,140 @@
+.landing-container {
+
+    &-background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -2;
+        width: 100%;
+        height: 90%;
+        background-color: $color-landing-bg;
+        clip-path: ellipse(155% 100% at 50% 0%);
+        overflow: hidden;
+
+        @media only screen and (min-width: $media-query-laptop-large) {
+            clip-path: ellipse(105% 100% at 50% 0%);
+        }
+
+        .landing-image {
+            img {
+                display: none;
+
+                @media only screen and (min-width: $media-query-laptop-large) {
+                    display: block;
+                    position: absolute;
+                    top: 15rem;
+                    right: 0;
+                }
+
+                @media only screen and (min-width: $media-query-desktop) {
+                    right: 20%;
+                    transform: translateX(20%);
+                }
+            }
+        }
+    }
+
+    &-content {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (min-width: $media-query-tablet) {
+            justify-content: flex-start;
+        }
+
+        .landing-title {
+            h1 {
+                font-size: $font-size-24;
+                color: $color-blue-dark;
+                margin: 2rem 0;
+
+                @media only screen and (min-width: $media-query-tablet) {
+                    font-size: $font-size-36;
+                }
+
+                @media only screen and (min-width: $media-query-laptop) {
+                    margin: 4rem 0;
+                    font-size: $font-size-54;
+                }
+            }
+
+            span {
+                color: $color-orange;
+            }
+
+            p {
+                font-size: $font-size-12;
+                margin-bottom: 5rem;
+
+                @media only screen and (min-width: $media-query-tablet) {
+                    font-size: $font-size-24;
+                }
+            }
+
+            .landing-buttons {
+                a.join-button {
+                    padding: 1rem 2rem;
+                    background-color: $color-orange;
+                    color: $color-white;
+                    border-radius: 8rem;
+                    font-weight: 500;
+                    margin-right: 4rem;
+                    transition: $hover-transition;
+
+                    @media only screen and (min-width: $media-query-tablet) {
+                        font-size: $font-size-24;
+                        padding: 1.5rem 3rem;
+                    }
+
+                    @media only screen and (min-width: $media-query-laptop) {
+                        padding: 2rem 4rem;
+
+                        &:hover {
+                            background-color: $color-white;
+                            color: $color-orange;
+                        }
+                    }
+                }
+
+                a.video-button {
+                    color: $color-black;
+                    transition: $hover-transition;
+
+                    &::before {
+                        content: '\f04b';
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: 600;
+                        padding: 1rem;
+                        margin-right: 1rem;
+                        color: $color-blue;
+                        background-color: $color-white;
+                        border-radius: 50%;
+                        transition: $hover-transition;
+
+                        @media only screen and (min-width: $media-query-tablet) {
+                            padding: 2rem;
+                            margin-right: 3rem;
+                        }
+                    }
+
+                    @media only screen and (min-width: $media-query-tablet) {
+                        font-size: $font-size-24;
+                    }
+
+                    &:hover {
+                        @media only screen and (min-width: $media-query-laptop) {
+                            color: $color-orange;
+
+                            &::before {
+                                color: $color-white;
+                                background-color: $color-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

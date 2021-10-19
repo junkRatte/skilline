@@ -4,8 +4,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
     top: 0;
+    z-index: 5;
+    margin: 0 auto;
 
     @media only screen and (min-width: $media-query-tablet) {
         padding: 1rem 1.5rem;
@@ -16,11 +18,11 @@
     }
 
     @media only screen and (min-width: $media-query-desktop) {
-        padding: 1rem 5rem;
+        max-width: $media-query-desktop;
     }
 
     img {
-        width: 40%;
+        width: 50%;
 
         @media only screen and (min-width: $media-query-tablet) {
             width: 60%;
