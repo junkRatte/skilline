@@ -1,6 +1,7 @@
 import "./App.scss";
 import Navbar from "./components/Navbar";
-import Landing from "./components/Landing";
+import Companies from "./sections/Companies";
+import Landing from "./sections/Landing";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <div className="layout-container">
         <Landing />
+        <Companies />
       </div>
     </div>
   );

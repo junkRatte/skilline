@@ -129,9 +129,13 @@
                     }
 
                     a {
-                        
                         color: $color-black;
                         letter-spacing: .1rem;
+                        transition: $hover-transition;
+
+                        &:hover {
+                            color: $color-orange;
+                        }
                     }
                 }
             }
@@ -162,6 +166,7 @@
                     border-radius: 8rem;
                     box-shadow: $login-button-shadow;
                     margin-bottom: 1rem;
+                    transition: $hover-transition;
 
                     @media only screen and (min-width: $media-query-tablet) {
                         margin-left: 2rem;
@@ -172,6 +177,11 @@
                     @media only screen and (min-width: $media-query-laptop) {
                         margin-left: 0;
                     }
+
+                    &:hover {
+                        color: $color-white;
+                        background-color: $color-orange;
+                    }
                 }
 
                 &-register {
@@ -179,6 +189,12 @@
                     color: $color-white;
                     padding: .5rem 2rem;
                     border-radius: 8rem;
+                    transition: $hover-transition;
+
+                    &:hover {
+                        color: $color-grey;
+                        background-color: $color-white;
+                    }
                 }
             }
         }

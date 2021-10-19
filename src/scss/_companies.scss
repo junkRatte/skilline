@@ -1,0 +1,24 @@
+.companies-section {
+    text-align: center;
+
+    h2 {
+        font-size: $font-size-26;
+        color: $color-grey-blue;
+        margin-bottom: 3.2rem;
+    }
+
+    .company-logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 130rem;
+        height: 50vh;
+        margin: 0 auto;
+
+        @media only screen and (min-width: $media-query-laptop-large) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+}

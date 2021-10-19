@@ -1,5 +1,5 @@
 import React from "react";
-import landingImg from "../images/header-pic.png";
+import landingImg from "../images/landing-image.png";
 
 function Landing() {
   return (

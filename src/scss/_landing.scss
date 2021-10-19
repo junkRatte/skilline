@@ -18,24 +18,27 @@
         .landing-image {
             img {
                 display: none;
+                width: 40%;
 
                 @media only screen and (min-width: $media-query-laptop-large) {
                     display: block;
                     position: absolute;
-                    top: 15rem;
+                    top: 10rem;
                     right: 0;
                 }
 
                 @media only screen and (min-width: $media-query-desktop) {
-                    right: 20%;
-                    transform: translateX(20%);
+                    right: 15%;
+                    transform: translateX(10%);
+                    top: 2rem;
+                    width: 40%;
                 }
             }
         }
     }
 
     &-content {
-        height: 60vh;
+        height: 90vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -45,6 +48,7 @@
         }
 
         .landing-title {
+            margin-bottom: 30rem;
             h1 {
                 font-size: $font-size-24;
                 color: $color-blue-dark;
