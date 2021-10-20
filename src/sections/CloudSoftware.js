@@ -3,10 +3,10 @@ import BillingIcon from "../components/BillingIcon";
 import DateIcon from "../components/DateIcon";
 import CustomerIcon from "../components/CustomerIcon";
 
-function Features() {
+function CloudSoftware() {
   return (
-    <div className="features-section">
-      <div className="features-section-title">
+    <div className="cloud-section">
+      <div className="cloud-section-title">
         <h2>
           All-In-One <span>Cloud Software.</span>
         </h2>
@@ -16,7 +16,7 @@ function Features() {
           tools needed to run a successful school or office.
         </p>
       </div>
-      <div className="features-section-cards">
+      <div className="cloud-section-cards">
         <div className="card billing">
           <BillingIcon />
           <div className="card-title">
@@ -68,4 +68,4 @@ function Features() {
   );
 }
 
-export default Features;
+export default CloudSoftware;

@@ -1,0 +1,277 @@
+.whatis-section {
+    &-title {
+        text-align: center;
+        margin-bottom: 8rem;
+
+        h1 {
+            color: $color-blue-dark;
+            margin-bottom: 2rem;
+        }
+
+        span {
+            color: $color-orange;
+        }
+
+        @media only screen and (min-width: $media-query-tablet) {
+
+            h1,
+            span {
+                font-size: $font-size-44;
+            }
+        }
+
+        p {
+            white-space: pre-line;
+            letter-spacing: .02rem;
+            max-width: 110rem;
+            margin: 0 auto;
+
+            @media only screen and (min-width: $media-query-tablet) {
+                font-size: $font-size-24;
+                line-height: 4.3rem;
+                letter-spacing: .02rem;
+            }
+        }
+    }
+
+    &-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15rem;
+
+        @media only screen and (min-width: $media-query-laptop-large) {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .for-instructors {
+            position: relative;
+            margin-bottom: 2rem;
+
+            @media only screen and (min-width: $media-query-laptop-large) {
+                margin-bottom: 0;
+            }
+
+            img {
+                width: 100%;
+                max-width: 60rem;
+                height: 100%;
+                max-height: 40rem;
+            }
+
+            &-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+
+                h3 {
+                    color: $color-white;
+                    font-size: $font-size-20;
+                    margin-bottom: 4rem;
+
+                    @media only screen and (min-width: $media-query-tablet) {
+                        font-size: $font-size-32;
+                    }
+                }
+
+                a {
+                    color: $color-white;
+                    font-size: $font-size-12;
+                    padding: 1rem 1.5rem;
+                    border: .1rem solid $color-white;
+                    border-radius: 8rem;
+                    transition: $hover-transition;
+
+                    &:hover {
+                        color: $color-blue;
+                        background-color: $color-white;
+                    }
+
+                    @media only screen and (min-width: $media-query-tablet) {
+                        font-size: $font-size-22;
+                        padding: 2rem 3.5rem;
+                    }
+                }
+            }
+        }
+
+        .for-students {
+            position: relative;
+
+            img {
+                width: 100%;
+                max-width: 60rem;
+                height: 100%;
+                max-height: 40rem;
+            }
+
+            &-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+
+                h3 {
+                    color: $color-white;
+                    font-size: $font-size-20;
+                    margin-bottom: 4rem;
+
+                    @media only screen and (min-width: $media-query-tablet) {
+                        font-size: $font-size-32;
+                    }
+                }
+
+                a {
+                    color: $color-white;
+                    font-size: $font-size-12;
+                    padding: 1rem 1.5rem;
+                    background-color: $color-blue;
+                    border-radius: 8rem;
+                    transition: $hover-transition;
+
+                    &:hover {
+                        color: $color-blue;
+                        background-color: $color-white;
+                    }
+
+                    @media only screen and (min-width: $media-query-tablet) {
+                        font-size: $font-size-22;
+                        padding: 2rem 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &-video {
+        max-width: 150rem;
+        width: 100%;
+        margin: 0 auto;
+
+        @media only screen and (min-width: $media-query-tablet) {
+            display: flex;
+        }
+
+        .video-description {
+            margin-bottom: 3rem;
+            position: relative;
+
+            @media only screen and (min-width: $media-query-laptop) {
+                margin-right: 6rem;
+                margin-bottom: 0;
+                width: 50%;
+            }
+
+            @media only screen and (min-width: $media-query-laptop-large) {
+                &::before {
+                    content: '';
+                    width: 7.3rem;
+                    height: 7.3rem;
+                    background-color: $color-orange;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -1rem;
+                    left: -3rem;
+                    z-index: -1;
+                }
+
+                &::after {
+                    content: '';
+                    width: 3rem;
+                    height: 3rem;
+                    background-color: $color-orange;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    z-index: -1;
+                }
+            }
+
+            h3 {
+                color: $color-blue-dark;
+                font-size: $font-size-20;
+                margin-bottom: 3rem;
+
+                @media only screen and (min-width: $media-query-laptop) {
+
+                    font-size: $font-size-24;
+                }
+
+                @media only screen and (min-width: $media-query-laptop-large) {
+                    font-size: $font-size-36;
+                }
+            }
+
+            span {
+                color: $color-orange;
+            }
+
+            p {
+                color: $color-blue-dark;
+                letter-spacing: .02rem;
+                margin-bottom: 3rem;
+
+                @media only screen and (min-width: $media-query-laptop) {
+                    width: 90%;
+                    font-size: $font-size-16;
+                }
+
+                @media only screen and (min-width: $media-query-laptop) {
+                    font-size: $font-size-24;
+                }
+            }
+
+            a {
+                color: $color-grey-blue;
+                text-decoration: underline;
+
+                @media only screen and (min-width: $media-query-laptop-large) {
+                    font-size: $font-size-22;
+                }
+            }
+        }
+
+        .video {
+            position: relative;
+
+            @media only screen and (min-width: $media-query-laptop) {
+                width: 50%;
+            }
+
+            @media only screen and (min-width: $media-query-laptop-large) {
+                &::before {
+                    content: '';
+                    width: 13rem;
+                    height: 13rem;
+                    background-color: $color-blue;
+                    position: absolute;
+                    z-index: -1;
+                    border-radius: 2rem;
+                    top: -2rem;
+                    left: -2rem;
+                }
+
+                &::after {
+                    content: '';
+                    width: 23rem;
+                    height: 23rem;
+                    background-color: $color-orange;
+                    position: absolute;
+                    z-index: -1;
+                    border-radius: 2rem;
+                    bottom: -1rem;
+                    right: -2rem;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,8 +1,9 @@
 import "./App.scss";
 import Navbar from "./components/Navbar";
 import Companies from "./sections/Companies";
-import Features from "./sections/Features";
 import Landing from "./sections/Landing";
+import CloudSoftware from "./sections/CloudSoftware";
+import WhatIs from "./sections/WhatIs";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <div className="layout-container">
         <Landing />
         <Companies />
-        <Features />
+        <CloudSoftware />
+        <WhatIs />
       </div>
     </div>
   );

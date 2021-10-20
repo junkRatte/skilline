@@ -1,10 +1,11 @@
-.features-section {
-    height: 76rem;
+.cloud-section {
     margin-top: 15rem;
     text-align: center;
 
     @media only screen and (min-width: $media-query-laptop-large) {
         margin-top: 0;
+        margin-bottom: 15rem;
+        height: 76rem;
     }
 
     &-title {
