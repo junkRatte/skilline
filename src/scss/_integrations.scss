@@ -1,0 +1,112 @@
+.integrations-section {
+    margin-top: 10rem;
+
+    @media only screen and (min-width: $media-query-tablet) {
+        display: flex;
+        align-items: center;
+    }
+
+    &-logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+
+        @media only screen and (min-width: $media-query-tablet) {
+            width: 50%;
+        }
+
+        .logos-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media only screen and (min-width: $media-query-tablet) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 3rem 0;
+                grid-template-areas: ". ."
+                ". .";
+                width: 82.5%;
+                height: 100%;
+            }
+
+            img {
+                width: 20%;
+
+                @media only screen and (min-width: $media-query-tablet) {
+
+                    min-width: 50%;
+                }
+            }
+        }
+    }
+
+    &-description {
+        @media only screen and (min-width: $media-query-tablet) {
+            width: 50%;
+        }
+
+        .line-text {
+            color: $color-blue-dark;
+            position: relative;
+            font-size: $font-size-20;
+            margin-bottom: 3rem;
+
+            span {
+                content: '';
+                width: 8rem;
+                border-bottom: .1rem solid $color-blue-dark;
+                position: absolute;
+                top: 50%;
+            }
+
+            h2 {
+                padding-left: 11rem;
+            }
+        }
+
+        h3 {
+            color: $color-blue-dark;
+            margin-bottom: 3rem;
+            font-size: $font-size-20;
+
+            @media only screen and (min-width: $media-query-laptop) {
+                font-size: $font-size-36;
+            }
+        }
+
+        span {
+            color: $color-orange;
+        }
+
+        p {
+            color: $color-blue-dark;
+            font-size: $font-size-14;
+            margin-bottom: 5rem;
+
+            @media only screen and (min-width: $media-query-laptop) {
+                font-size: $font-size-24;
+            }
+        }
+
+        a {
+            font-size: $font-size-14;
+            color: $color-orange;
+            border: .1rem solid $color-orange;
+            border-radius: 8rem;
+            padding: 2rem 4rem;
+            transition: $hover-transition;
+            
+            @media only screen and (min-width: $media-query-laptop) {
+                font-size: $font-size-24;
+            }
+
+            &:hover {
+                color: $color-white;
+                background-color: $color-orange;
+            }
+        }
+    }
+}
