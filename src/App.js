@@ -4,6 +4,7 @@ import Companies from "./sections/Companies";
 import Landing from "./sections/Landing";
 import CloudSoftware from "./sections/CloudSoftware";
 import WhatIs from "./sections/WhatIs";
+import Features from "./sections/Features";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Companies />
         <CloudSoftware />
         <WhatIs />
+        <Features />
       </div>
     </div>
   );
