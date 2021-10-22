@@ -8,6 +8,7 @@ import Features from "./sections/Features";
 import Integrations from "./sections/Integrations";
 import Testimonials from "./sections/Testimonials";
 import News from "./sections/News";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Integrations />
         <Testimonials />
         <News />
+        <Footer />
       </div>
     </div>
   );

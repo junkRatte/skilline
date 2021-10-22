@@ -1,0 +1,124 @@
+footer {
+    width: 100%;
+    background-color: #252641;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0 4rem 0;
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8rem;
+
+        img {
+            width: 50%;
+        }
+
+        span {
+            border-right: .1rem solid #626381;
+            height: 8rem;
+            margin: 0 2rem;
+        }
+
+        p {
+            color: $color-white;
+            font-size: $font-size-14;
+            width: 100%;
+
+            @media only screen and (min-width: $media-query-laptop) {
+                font-size: $font-size-22;
+            }
+        }
+    }
+
+    .footer-form {
+        text-align: center;
+
+        h3 {
+            color: #B2B3CF;
+            font-weight: 400;
+            letter-spacing: .04rem;
+            margin-bottom: 2rem;
+
+            @media only screen and (min-width: $media-query-laptop) {
+                font-size: $font-size-26;
+            }
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8rem;
+
+            .email-input {
+                background-color: transparent;
+                border: .1rem solid #83839A;
+                border-radius: 8rem;
+                padding: 1rem 2rem;
+
+                &::placeholder {
+                    color: #83839A;
+                }
+
+                &:focus {
+                    color: $color-white;
+                }
+
+                @media only screen and (min-width: $media-query-laptop) {
+                    width: 40rem;
+                    padding: 2rem 3rem;
+                    font-size: $font-size-20;
+                }
+            }
+
+            .submit-button {
+                border: none;
+                border-radius: 8rem;
+                padding: 1rem 2rem;
+                margin-left: 1rem;
+                background-color: #545AE8;
+                color: $color-white;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                @media only screen and (min-width: $media-query-laptop) {
+                    padding: 2rem 3rem;
+                    font-size: $font-size-20;
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        text-align: center;
+
+        @media only screen and (min-width: $media-query-laptop) {
+            font-size: $font-size-22;
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                &:not(:last-child) {
+                    padding-right: 1rem;
+                    margin-right: 1rem;
+                    border-right: .1rem solid #626381;
+                }
+
+                a {
+                    color: #B2B3CF;
+                }
+            }
+        }
+
+        p {
+            color: #B2B3CF;
+        }
+    }
+}
