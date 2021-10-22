@@ -69,6 +69,8 @@
             h2 {
                 padding-left: 6rem;
                 text-transform: uppercase;
+                font-weight: 300;
+                letter-spacing: .2rem;
 
                 @media only screen and (min-width: $media-query-tablet) {
                     padding-left: 11rem;
@@ -91,8 +93,9 @@
         }
 
         p {
-            color: $color-blue-dark;
+            color: $color-grey-blue;
             font-size: $font-size-14;
+            line-height: 4rem;
             margin-bottom: 5rem;
 
             @media only screen and (min-width: $media-query-laptop) {
@@ -101,7 +104,7 @@
         }
 
         a {
-            font-size: $font-size-14;
+            font-size: $font-size-12;
             color: $color-orange;
             border: .1rem solid $color-orange;
             border-radius: 8rem;

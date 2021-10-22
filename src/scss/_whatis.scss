@@ -159,6 +159,8 @@
         .video-description {
             margin-bottom: 3rem;
             position: relative;
+            letter-spacing: .02rem;
+            line-height: 4rem;
 
             @media only screen and (min-width: $media-query-laptop) {
                 margin-right: 6rem;
@@ -212,7 +214,7 @@
             }
 
             p {
-                color: $color-blue-dark;
+                color: $color-grey-blue;
                 letter-spacing: .02rem;
                 margin-bottom: 3rem;
 

@@ -14,7 +14,9 @@ function Testimonials() {
           Skilline has got more than 100k positive ratings from our users around
           the world.
           <br />
+          <br />
           Some of the students and teachers were greatly helped by Skilline.
+          <br />
           <br />
           Are you too? Please give your assessment!
         </p>

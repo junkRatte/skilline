@@ -130,12 +130,16 @@
             border: .1rem solid $color-orange;
             border-radius: 8rem;
             padding: 2rem 4rem;
-            font-size: $font-size-22;
+            font-size: $font-size-12;
             transition: $hover-transition;
 
             &:hover {
                 color: $color-white;
                 background-color: $color-orange;
+            }
+
+            @media only screen and (min-width: $media-query-laptop) {
+                font-size: $font-size-22;
             }
         }
     }

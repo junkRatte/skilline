@@ -176,6 +176,7 @@
 
                     @media only screen and (min-width: $media-query-laptop) {
                         margin-left: 0;
+                        padding: 1rem 4rem;
                     }
 
                     &:hover {
@@ -194,6 +195,10 @@
                     &:hover {
                         color: $color-grey;
                         background-color: $color-white;
+                    }
+
+                    @media only screen and (min-width: $media-query-laptop) {
+                        padding: 1rem 4rem;
                     }
                 }
             }
