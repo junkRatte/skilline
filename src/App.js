@@ -6,6 +6,7 @@ import CloudSoftware from "./sections/CloudSoftware";
 import WhatIs from "./sections/WhatIs";
 import Features from "./sections/Features";
 import Integrations from "./sections/Integrations";
+import Testimonials from "./sections/Testimonials";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <WhatIs />
         <Features />
         <Integrations />
-      </div>
+        <Testimonials />
+        </div>
     </div>
   );
 }

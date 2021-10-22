@@ -56,14 +56,23 @@
 
             span {
                 content: '';
-                width: 8rem;
+                width: 5rem;
                 border-bottom: .1rem solid $color-blue-dark;
                 position: absolute;
                 top: 50%;
+
+                @media only screen and (min-width: $media-query-tablet) {
+                    width: 8rem;
+                }
             }
 
             h2 {
-                padding-left: 11rem;
+                padding-left: 6rem;
+                text-transform: uppercase;
+
+                @media only screen and (min-width: $media-query-tablet) {
+                    padding-left: 11rem;
+                }
             }
         }
 
