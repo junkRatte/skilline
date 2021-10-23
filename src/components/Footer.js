@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer-logo">
-        <img src={logo} />
+        <img src={logo} alt="Logo" />
         <span></span>
         <p>
           Virtual Class
@@ -21,7 +21,7 @@ function Footer() {
             placeholder="Your Email"
             type="email"
           />
-          <input className="submit-button" value="Submit" type="submit" />
+          <input className="submit-button" value="Subscribe" type="submit" />
         </form>
       </div>
       <div className="footer-copyright">

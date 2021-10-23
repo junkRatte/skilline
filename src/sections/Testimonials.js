@@ -1,5 +1,6 @@
 import React from "react";
-import SliderImageOne from "../images/slider-image.png";
+import ImageSlider from "../components/ImageSlider";
+import { SliderData } from "../components/SliderData";
 
 function Testimonials() {
   return (
@@ -28,31 +29,7 @@ function Testimonials() {
         </a>
       </div>
       <div className="testimonials-section-slider">
-        <div className="slider">
-          <i class="fas fa-chevron-left"></i>
-          <i class="fas fa-chevron-right"></i>
-          <div className="slider-image">
-            <img src={SliderImageOne} />
-          </div>
-          <div className="slider-review">
-            <p className="slider-review-text">
-              "Thank you so much for your help. It's exactly what I've been
-              looking for. You won't regret it. It really saves me time and
-              effort. Skilline is exactly what our business has been lacking."
-            </p>
-            <div className="slider-review-bottom">
-              <p>Gloria Rose</p>
-              <div className="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <p>12 reviews at Yelp</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ImageSlider slides={SliderData} />
       </div>
     </div>
   );

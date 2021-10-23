@@ -69,7 +69,7 @@ footer {
 
                 @media only screen and (min-width: $media-query-laptop) {
                     width: 40rem;
-                    padding: 2rem 3rem;
+                    padding: 1.5rem 3rem;
                     font-size: $font-size-20;
                 }
             }
@@ -81,13 +81,16 @@ footer {
                 margin-left: 1rem;
                 background-color: #545AE8;
                 color: $color-white;
+                transition: $hover-transition;
 
                 &:hover {
                     cursor: pointer;
+                    color: #545AE8;
+                    background-color: $color-white;
                 }
 
                 @media only screen and (min-width: $media-query-laptop) {
-                    padding: 2rem 3rem;
+                    padding: 1.5rem 3rem;
                     font-size: $font-size-20;
                 }
             }
